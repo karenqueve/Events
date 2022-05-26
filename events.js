@@ -11,11 +11,9 @@ let handleClick = function(event) {
  document.getElementById("btnToClick").addEventListener("click", handleClick);
 
 
- /*addEventListener("focus", function(event) {
-     console.log(event);
- });*/
+ let varFocus = function(event) {
+     console.log(event.target.value);
+ };
 
- 
- addEventListener('value', function (event) {
-     console.log(event);
- });
+document.getElementById("valueOfInput").addEventListener("focus", varFocus);
+document.getElementById("valueOfInput").addEventListener("input", varFocus);
